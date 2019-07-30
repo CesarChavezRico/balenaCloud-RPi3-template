@@ -2,7 +2,7 @@ version: '2.1'
 volumes:
     resin-data:
 services:
-  modbus:
+  core:
     container_name: core
     build: core
     privileged: true
