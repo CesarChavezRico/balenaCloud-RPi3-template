@@ -1,0 +1,12 @@
+version: '1'
+volumes:
+    resin-data:
+services:
+  modbus:
+    container_name: core
+    build: core
+    privileged: true
+    labels:
+      io.resin.features.dbus: '1'
+    ports:
+      - "80:80"
